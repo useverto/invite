@@ -11,7 +11,7 @@ export async function handle(state: StateInterface, action: ActionInterface) {
       return { state: Transfer(state, action) };
 
     case "balance":
-      return { state: Balance(state, action) };
+      return { result: Balance(state, action) };
 
     // Custom Functions
     case "mint":
